@@ -1,4 +1,4 @@
-﻿namespace con_redis_dict.RedisStore
+﻿namespace console_redis_dict.RedisStore
 {
     using System;
     using System.IO;
