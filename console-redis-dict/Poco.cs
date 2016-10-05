@@ -6,13 +6,18 @@
     [Serializable]
     public class Poco
     {
-        private readonly int _state;
+        private int _state;
 
         public Poco() { }
 
-        public Poco(int value)
+        public Poco(int state)
         {
-            _state = value;
+            _state = state;
+        }
+
+        public void Change(int newState)
+        {
+            _state = newState;
         }
 
         public override string ToString()

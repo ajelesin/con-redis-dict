@@ -15,9 +15,9 @@
             var cacheClient = new StackExchangeRedisCacheClient(connection, serializer);
 
             var o1 = new Poco(10);
-            cacheClient.Add("mykey", o1);
+            cacheClient.Add("key", o1);
 
-            var o2 = cacheClient.Get<Poco>("mykey");
+            var o2 = cacheClient.Get<Poco>("key");
             Console.WriteLine(o2);
         }
     }
